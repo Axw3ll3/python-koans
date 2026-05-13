@@ -17,3 +17,6 @@ verification/
 
 # macOS
 .DS_Store
+
+# Specifikationsdokument (privat arbetsunderlag)
+specs-python-koans-beginner.md
