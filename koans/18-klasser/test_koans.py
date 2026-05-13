@@ -63,7 +63,7 @@ def test_instance_attribute_shadows_class_attribute():
 
 def test_property_is_accessed_without_parentheses():
     """@property gör en metod anropbar som ett attribut — utan parenteser.
-    Hur läser du ett @property från en instans?"""
+    Vad är typen av c.area om area är definierat med @property?"""
     class Cirkel:
         def __init__(self, r):
             self.r = r
@@ -71,7 +71,7 @@ def test_property_is_accessed_without_parentheses():
         def area(self):
             return 3.14 * self.r ** 2
     c = Cirkel(1)
-    assert type(c.____) == float
+    assert type(c.area) == ____
 
 
 def test_str_is_called_by_print_and_str():

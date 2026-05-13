@@ -43,10 +43,11 @@ def test_sets_do_not_support_index_access():
 
 
 def test_add_method_inserts_one_element():
-    """Vilken metod lägger till ett enskilt element i ett set?"""
+    """add() lägger till ett enskilt element i ett set.
+    Är 3 i s efter s.add(3)?"""
     s = {1, 2}
-    s.____(3)
-    assert 3 in s
+    s.add(3)
+    assert (3 in s) == ____
 
 
 def test_frozenset_is_an_immutable_set():

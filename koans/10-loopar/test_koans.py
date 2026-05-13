@@ -29,9 +29,9 @@ def test_loop_variable_retains_last_value_after_loop():
 
 def test_enumerate_yields_index_value_pairs():
     """enumerate() ger (index, värde)-par vid iteration.
-    Vilken funktion producerar dessa par?"""
-    result = list(____(["a", "b", "c"]))
-    assert result[0] == (0, "a")
+    Vad är det första elementet i list(enumerate(["a", "b", "c"]))?"""
+    result = list(enumerate(["a", "b", "c"]))
+    assert result[0] == ____
 
 
 def test_enumerate_start_parameter_sets_initial_index():
@@ -42,9 +42,9 @@ def test_enumerate_start_parameter_sets_initial_index():
 
 def test_zip_pairs_elements_from_two_iterables():
     """zip() parar ihop element positionellt från två iterables.
-    Vilken funktion gör detta?"""
-    result = list(____([1, 2], ["a", "b"]))
-    assert result == [(1, "a"), (2, "b")]
+    Vad returnerar list(zip([1, 2], ["a", "b"]))?"""
+    result = list(zip([1, 2], ["a", "b"]))
+    assert result == ____
 
 
 def test_zip_stops_at_shortest_iterable():

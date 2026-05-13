@@ -81,12 +81,14 @@ def test_slice_assignment_replaces_elements_in_range():
 
 
 def test_index_method_returns_position_of_element():
-    """Vilken metod returnerar indexet för ett elements första förekomst?"""
+    """index() returnerar positionen för ett elements första förekomst.
+    Vad returnerar lst.index(20) om lst = [10, 20, 30]?"""
     lst = [10, 20, 30]
-    assert lst.____(20) == 1
+    assert lst.index(20) == ____
 
 
 def test_count_method_returns_number_of_occurrences():
-    """Vilken metod räknar hur många gånger ett värde förekommer i listan?"""
+    """count() räknar hur många gånger ett värde förekommer.
+    Hur många gånger förekommer 2 i [1, 2, 2, 3, 2]?"""
     lst = [1, 2, 2, 3, 2]
-    assert lst.____(2) == 3
+    assert lst.count(2) == ____
