@@ -1,0 +1,36 @@
+[project]
+name = "python-koans"
+version = "0.1.0"
+description = "Lär dig Python genom att lösa failande tester"
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.0",
+    "pytest-watch>=4.2",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["koans"]
+pythonpath = ["src"]
+addopts = "--import-mode=importlib"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+"koans/**/test_koans.py" = ["F401"]
+
+[tool.pyright]
+include = ["koans", "src"]
+pythonVersion = "3.11"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.4",
+    "pyright>=1.1",
+]

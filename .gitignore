@@ -1,0 +1,19 @@
+# Virtuell miljö
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+
+# Facit-versioner (privata — skapas lokalt av koan-författare)
+verification/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
