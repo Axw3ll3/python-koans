@@ -49,7 +49,7 @@ def test_slice_creates_a_new_list_object():
 def test_none_has_its_own_dedicated_type():
     """None är inte av typen object eller bool utan har ett eget typnamn.
     Vad heter typen?"""
-    assert type(None).__name__ ==   ____
+    assert type(None).__name__ ==   "NoneType"
 
 
 def test_tuple_unpacking_assigns_values_left_to_right():
@@ -63,10 +63,10 @@ def test_chained_assignment_binds_all_names_to_one_object():
     """x = y = z = 0 skapar ett objekt och binder alla tre namnen till det.
     Pekar x och y på exakt samma objekt?"""
     x = y = z = 0
-    assert (x is y) == ____
+    assert (x is y) == True
 
 
 def test_bool_is_a_subclass_of_int():
     """bool är en underklass till int — True och False är heltal med extra beteende.
     Är True en instans av int?"""
-    assert isinstance(True, int) == ____
+    assert isinstance(True, int) == True
