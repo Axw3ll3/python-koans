@@ -41,19 +41,19 @@ def test_strings_raise_typeerror_on_item_assignment():
 def test_strip_removes_surrounding_whitespace():
     """strip() tar bort blanktecken i början och slutet av strängen.
     Vad returnerar "  hej  ".strip()?"""
-    assert "  hej  ".strip() == ____
+    assert "  hej  ".strip() == "hej"
 
 
 def test_split_divides_string_at_separator():
     """split() delar en sträng vid avgränsningstecknet och returnerar en lista.
     Vad returnerar "a,b,c".split(",")?"""
-    assert "a,b,c".split(",") == ____
+    assert "a,b,c".split(",") == ["a", "b", "c"]
 
 
 def test_join_concatenates_list_with_separator():
     """join() sätter ihop en lista av strängar med avgränsaren som lim.
     Vad returnerar ", ".join(["a", "b", "c"])?"""
-    assert ", ".join(["a", "b", "c"]) == ____
+    assert ", ".join(["a", "b", "c"]) == "a, b, c"
 
 
 def test_string_methods_return_new_strings_not_modify_original():
@@ -61,12 +61,12 @@ def test_string_methods_return_new_strings_not_modify_original():
     Vad innehåller s efter att s.upper() anropats?"""
     s = "hej"
     _ = s.upper()
-    assert s == ____
+    assert s == "hej"
 
 
 def test_string_multiplication_repeats_content():
     """* på en sträng upprepar den angivet antal gånger. Vad returnerar "hej" * 3?"""
-    assert "hej" * 3 == ____
+    assert "hej" * 3 == "hejhejhej"
 
 
 # === Formatering ===
@@ -75,4 +75,4 @@ def test_string_multiplication_repeats_content():
 def test_f_string_supports_right_justification():
     """f-strängar accepterar formateringsspecifikationer: >10 höger-justerar i 10 tecken.
     Vad returnerar f"{'hej':>10}"?"""
-    assert f"{'hej':>10}" == ____
+    assert f"{'hej':>10}" == "       hej"
